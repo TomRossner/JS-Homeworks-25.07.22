@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script defer src="./script.js"></script>
+</head>
+<body id="body">
+        <div id="container" class="container">
+            <!-- <pre>1. create a new project
+                2. create the following inputs
+                    - name
+                    - age 
+                    - color
+                    - country
+                    - gender (bonus - radio)
+                3. on submit show the user a bootstrap card 
+                with backround as set by the user with his 
+                information
+                4. clear the data after each submit
+                5. don't insert the bootstrap card if the 
+                information set by the user is not logical 
+                for example age < 0, name.length < 2
+                
+                ** with each submit insert a new card without deleting previous cards
+                
+                BONUS: 
+                read about window.alert function and show the user the errors he has done in case (section 5) or show it in some bootstrap alert 
+                </pre> -->
+                <div id="inputs-container">
+                    <h1>Form</h1>
+
+                    <label for="name">Enter your name</label>
+                    <input type="text" name="name" id="nameInput" required><br>
+
+                    <label for="name">Enter your age</label>
+                    <input type="number" name="number" id="ageInput" required><br>
+
+                    <label for="name">Choose a color</label>
+                    <input type="color" name="color" id="colorInput"><br>
+
+                    <select name="country" id="countryInput" required>
+                        <option value="">Select a country</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Spain">Spain</option>
+                        <option value="France">France</option>
+                    </select><br>
+
+                    <div id="gender-container">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" id="maleInput" value="0">
+
+                        <label for="gender">Female</label>
+                        <input type="radio" name="gender" id="femaleInput" value="1"><br>
+                    </div><br>
+
+                    <button name="submit" id="submitButton" onclick="handleClickEvent()">Submit</button>
+                    <br>
+                </div>
+        </div>
+</body>
+</html>
